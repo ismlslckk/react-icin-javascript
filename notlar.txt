@@ -26,3 +26,16 @@ useEffect(() => {
 <form onSubmit={(e)=>{
   e.preventDefault(); // bunu yapmazsak form gönderildikten sonra sayfa yenilenir ve veriler kaybolur.
 }}></form>
+
+
+------------------------------------------------------------------------------------------------------------
+
+<div onClick={(e)=>{ console.log("main div tıklandı");}} className="mainClass">
+
+<input onClick={(e)=>{ 
+e.stopPropogation(); // bunu yapmazsak her inputa tıklandıgında bunun kapsayıcılarınında onClick metodunu tetikler.
+console.log("input tıklandı");
+
+}} />
+
+</div>
