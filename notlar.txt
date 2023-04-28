@@ -1,0 +1,21 @@
+componentDidMount(component ilk yüklendiğinde çalışır)
+  
+  useEffect(() => {
+    console.log("tek sefer ve component ilk yüklendiğinde çalışır.");
+  }, []);
+
+
+componentDidUpdate(component içerisinde ki herhangi bir state değiştiğinde çalışır) not : class component'te ilk yüklendiğinde çalışmaz, state değiştiğinde çalışır.
+
+  useEffect(() => {
+    console.log("herhangi bir state her değiştiğinde çalışır.component ilk yüklendiğinde de çalışır.");
+  });
+
+
+componentWillUnmount(component ekrandan kaldırılmadan önce çalışır.)
+
+useEffect(() => {
+    return () => {
+      console.log("unmounted");
+    };
+  }, []);
