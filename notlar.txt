@@ -19,3 +19,10 @@ useEffect(() => {
       console.log("unmounted");
     };
   }, []);
+
+
+------------------------------------------------------------------------------------------------------------
+
+<form onSubmit={(e)=>{
+  e.preventDefault(); // bunu yapmazsak form gönderildikten sonra sayfa yenilenir ve veriler kaybolur.
+}}></form>
