@@ -39,3 +39,10 @@ console.log("input tıklandı");
 }} />
 
 </div>
+
+------------------------------------------------------------------------------------------------------------
+
+aşağıdaki kullanım react.fragment anlamına gelmektedir.
+<>
+
+</>
