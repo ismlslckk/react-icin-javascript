@@ -46,3 +46,8 @@ aşağıdaki kullanım react.fragment anlamına gelmektedir.
 <>
 
 </>
+
+------------------------------------------------------------------------------------------------------------
+
+memoized : useMemo kullanılırken eğer zaman alacak bir işlem yapılmak istenilirse kullanılır, ilk çalıştığında çalışır ve eğer aynı işlem 
+tekrar gelirse tekrar hesaplamaz daha önce hesaplanan sonucu geriye döndürür.
