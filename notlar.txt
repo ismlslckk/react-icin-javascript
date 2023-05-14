@@ -55,3 +55,45 @@ tekrar gelirse tekrar hesaplamaz daha önce hesaplanan sonucu geriye döndürür
 ------------------------------------------------------------------------------------------------------------
 
 controlled form : eğer form elemanlarının değerlerini react statelerinde store ediyorsak controlled form olur.
+
+
+#hooks
+
+  #useState
+
+    const initialValue = () => {
+      return 1;
+    }
+
+    function App () {
+
+    const [state,setState] = useState(initialValue()); // initial value değerini dışarıdan bir fonksiyon ile alırsak, komponent her render olduğunda initialValue fonksiyonu tekrar çalışır, eğer direk useState içerisine arrow function ile fonksiyon yazarsak yalnız 1 kez çalışır.
+
+    }
+
+  #useRef
+
+  useRef kullanıldığı zaman useRef değişkeni set edildiğinde(veriable.current = "new value") component tekrar render olmuyor.
+  ayrıca state'in önceki değerinide tutmak için useRef kullanılabilir.
+
+  #useCallback
+   örneğin App isimli komponent içerisinde getListItems isimli bir fonksiyonu (<ListItem items = {getListItems} />) şeklinde child komponente props olarak geçersek,  her App komponenti içerisindeki bir state değiştiğinde getListItems fonksiyonunun referansı değiştiği için ListItem komponentide tekrar render olacak, bunu önlemek için getListItems fonksiyonu useCallback hook'u ile sarmalanır, ve App komponenti yeniden render olduğu zaman getListItems isimli fonksiyonun referansı değişmeyeceği için <ListItem/> componenti tekrar render olmaz.(referential equality)
+
+
+  #useLayoutEffect
+
+  useEffect asenkron çalışır ve bu yüzden Api call yapmak için en uygun yerdir. useLayoutEffect ise senkron yapıdadır ve tarıyıcı DOM'u paint etmeden araya girer. örneğin dom'daki bir değişikliği direk olarak kullanıcıya yansıtmak istiyorsak kullanılabilir.
+
+  #useTransition
+
+  eğer işlemler arasında öncelik belirlemek istiyorsak düşük öncelikte olan işlemleri useTransition ile sarmalarız, böylece react işlemleri yaparken useTransition ile sarmalanan işlemleri en son çalıştırır bu şekilde kullanıcı ekranda herhangi yavaşlama ve kasma olmadan işlemlerine devam edebilir.
+
+  örnek kullanım;
+
+  const [isPending,startTransition] = useTransition();
+
+  startTransition(()=>{
+    işlemler
+  });
+
+
