@@ -39,7 +39,9 @@ topla(2)(3) çağırdığımızda ise (c) => (a+b +c) döndürür.
 
 ------------------------------------------------------------------------------------------------------------
 
-High Order Component (HOC) : Bazı componentlerinize ortak bir özellik veya fonksiyonalite vermek istersiniz. Örneğin, animasyonlar kullanmak istiyorsunuz. Ozaman bir HOC yazarak, istediğiniz bileşenlere animasyon özelliği ekleyebilirsiniz. Veya log atmak istiyorsunuz. Veya, MasterPage(Layout) yapmak istiyorsunuz. Her component’e ayrı ayrı Layout componentlerini eklemektense, en altta export ederken,
+High Order Component (HOC) : Bazı componentlerinize ortak bir özellik veya fonksiyonalite vermek istersiniz. Örneğin, animasyonlar kullanmak istiyorsunuz. Ozaman bir HOC yazarak, istediğiniz bileşenlere animasyon özelliği ekleyebilirsiniz. Veya log atmak istiyorsunuz. Veya, MasterPage(Layout) yapmak istiyorsunuz. Her component’e ayrı ayrı Layout componentlerini eklemektense, en altta export ederken hoc componenti ile export etmeniz yeterli.
+
+https://muratturkaym.medium.com/higher-order-components-77a6796d777a
 
 ------------------------------------------------------------------------------------------------------------
 
