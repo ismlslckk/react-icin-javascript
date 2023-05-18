@@ -133,5 +133,6 @@ controlled form : eğer form elemanlarının değerlerini react statelerinde sto
         2- useImperativeHandle içeriisnde ikinci paremetre olarak istenildiği kadar json formatında fonksiyonlar yazılır.
         3- parent componentten child'a parametre olarak geçilen ref referansına . denilerek child içinde tanımlanan fonksiyonlara erişilir.
 
-  
+  #useId
+    unique id üretmek için kullanılır.
 
