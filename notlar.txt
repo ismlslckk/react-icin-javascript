@@ -30,6 +30,20 @@ useEffect(() => {
 
 ------------------------------------------------------------------------------------------------------------
 
+chain arrow function : fonksiyon döndüren fonksiyondur.
+
+const topla = (a) => (b) => (c) => (a+b+c)
+
+örneğin topla(2) çağırdığımızda bu geriye (b) => (c) => (a+b +c) döndürür.
+topla(2)(3) çağırdığımızda ise (c) => (a+b +c) döndürür.
+
+------------------------------------------------------------------------------------------------------------
+
+High Order Component (HOC) : Bazı componentlerinize ortak bir özellik veya fonksiyonalite vermek istersiniz. Örneğin, animasyonlar kullanmak istiyorsunuz. Ozaman bir HOC yazarak, istediğiniz bileşenlere animasyon özelliği ekleyebilirsiniz. Veya log atmak istiyorsunuz. Veya, MasterPage(Layout) yapmak istiyorsunuz. Her component’e ayrı ayrı Layout componentlerini eklemektense, en altta export ederken,
+
+------------------------------------------------------------------------------------------------------------
+
+
 <div onClick={(e)=>{ console.log("main div tıklandı");}} className="mainClass">
 
 <input onClick={(e)=>{ 
@@ -106,4 +120,5 @@ controlled form : eğer form elemanlarının değerlerini react statelerinde sto
   input value değerine atanan text değeri her değiştiğinde 2 saniye bekler, eğer 2 saniye içinde başka birşey yazılmamış o zaman
   text değerindeki state değişikliğini bildirir.(debounce input event)
 
+  
 
