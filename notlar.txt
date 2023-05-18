@@ -96,6 +96,10 @@ controlled form : eğer form elemanlarının değerlerini react statelerinde sto
     işlemler
   });
   
+  <Suspense fallback="Loading results...">
+        {result}
+  </Suspense>
+  
   #useDeferredValue
   const deferredText = useDeferredValue(text); 
   
