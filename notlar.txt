@@ -95,5 +95,11 @@ controlled form : eğer form elemanlarının değerlerini react statelerinde sto
   startTransition(()=>{
     işlemler
   });
+  
+  #useDeferredValue
+  const deferredText = useDeferredValue(text); 
+  
+  input value değerine atanan text değeri her değiştiğinde 2 saniye bekler, eğer 2 saniye içinde başka birşey yazılmamış o zaman
+  text değerindeki state değişikliğini bildirir.(debounce input event)
 
 
