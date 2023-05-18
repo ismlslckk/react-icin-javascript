@@ -121,6 +121,17 @@ controlled form : eğer form elemanlarının değerlerini react statelerinde sto
   
   input value değerine atanan text değeri her değiştiğinde 2 saniye bekler, eğer 2 saniye içinde başka birşey yazılmamış o zaman
   text değerindeki state değişikliğini bildirir.(debounce input event)
+  
+  #forwardRef
+  
+      parent component ten child componente erişmek için kullanılır.
+        1- child component React.forwardRef() ile sarmalanır.
+        2- child componnet props tan sonra ref parametresini alır ve bu parametre child componente ref={ref}  olarak verilir.
+      
+      useImperativeHandle
+        1- child component içinde useImperativeHandle içerisinde ilk parametre olarak parenttan gelen ref verilir.
+        2- useImperativeHandle içeriisnde ikinci paremetre olarak istenildiği kadar json formatında fonksiyonlar yazılır.
+        3- parent componentten child'a parametre olarak geçilen ref referansına . denilerek child içinde tanımlanan fonksiyonlara erişilir.
 
   
 
