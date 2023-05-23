@@ -19,7 +19,11 @@ useEffect(() => {
       console.log("unmounted");
     };
   }, []);
+  
+------------------------------------------------------------------------------------------------------------
 
+#redux-thunk
+redux-thunk middleware. Reducer'ın pure kalmasını sağlayan bir kütüphanedir. Side effect işlemlerini bu kütüphaneyi kullanarak yaparız.
 
 ------------------------------------------------------------------------------------------------------------
 
